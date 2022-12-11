@@ -1,0 +1,99 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./assets/peoples.jpg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App__reg_success {
+  display: flex;
+  font-size: 0.8rem;
+  color: #FFF;
+  background-color: green;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  margin-top: 10px;
+  border-radius: 4px 0 0 4px;
+  transition: 1s;
+}
+
+.App__close-success {
+  transition: 1s;
+  translate: 0 -150%;
+}
+
+.App__edit-success {
+  transition: 1s;
+  translate: 0 -150%;
+}
+
+.App__del_success {
+  display: flex;
+  font-size: 0.8rem;
+  color: #FFF;
+  background-color: red;
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  margin-top: 10px;
+  border-radius: 4px 0 0 4px;
+  transition: 1s;
+}
+
+.App__delete-success {
+  transition: 1s;
+  translate: 0 -150%;
+}
+
+.App__h1 {
+  margin-left: 10px;
+}
+
+.App__btn {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: white;
+  padding: 0.5em 2em;
+  background-color: #555A88;
+  border-radius: 5px;
+}
+
+.form-container {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0003;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  transition: 1s;
+}
+
+.close__form {
+  transition: 1s;
+  transform: translateX(-100%);
+}
+
+.user-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  width: 100%;
+  max-width: 1200px;
+  gap: 2em;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+}
